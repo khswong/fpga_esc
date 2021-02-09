@@ -1,0 +1,680 @@
+EESchema Schematic File Version 4
+LIBS:fpga_esc-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 3900 1300 0    50   Input ~ 0
+V_POWER
+Wire Wire Line
+	5450 2250 5450 2350
+Connection ~ 5450 2350
+Wire Wire Line
+	5450 2350 5450 2450
+$Comp
+L fpga_esc-rescue:IRFR3806TRPBF-lib_sch Q?
+U 1 1 5FEE82B3
+P 5400 2100
+AR Path="/5FEE82B3" Ref="Q?"  Part="1" 
+AR Path="/5FD3EFA2/5FEE82B3" Ref="Q1"  Part="1" 
+F 0 "Q1" H 5555 2196 50  0000 L CNN
+F 1 "IRFR3806TRPBF" H 5555 2105 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin4" H 6450 2650 50  0001 C CNN
+F 3 "https://www.infineon.com/dgdl/irfr3806pbf.pdf?fileId=5546d462533600a401535631e18720d9" H 5400 2750 50  0001 C CNN
+	1    5400 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L fpga_esc-rescue:IRFR3806TRPBF-lib_sch Q?
+U 1 1 5FEE82BA
+P 5400 2700
+AR Path="/5FEE82BA" Ref="Q?"  Part="1" 
+AR Path="/5FD3EFA2/5FEE82BA" Ref="Q2"  Part="1" 
+F 0 "Q2" H 5555 2796 50  0000 L CNN
+F 1 "IRFR3806TRPBF" H 5555 2705 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin4" H 6450 3250 50  0001 C CNN
+F 3 "https://www.infineon.com/dgdl/irfr3806pbf.pdf?fileId=5546d462533600a401535631e18720d9" H 5400 3350 50  0001 C CNN
+	1    5400 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L fpga_esc-rescue:R100-lib_sch R1
+U 1 1 5FEE82C1
+P 5000 2100
+F 0 "R1" H 5000 2375 50  0000 C CNN
+F 1 "100R" H 5000 2284 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5000 2300 50  0001 C CNN
+F 3 "" H 5000 2300 50  0001 C CNN
+	1    5000 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L fpga_esc-rescue:R100-lib_sch R2
+U 1 1 5FEE82C8
+P 5000 2700
+F 0 "R2" H 5000 2975 50  0000 C CNN
+F 1 "100R" H 5000 2884 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5000 2900 50  0001 C CNN
+F 3 "" H 5000 2900 50  0001 C CNN
+	1    5000 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5FEE82CF
+P 4050 1300
+F 0 "#FLG0101" H 4050 1375 50  0001 C CNN
+F 1 "PWR_FLAG" H 4050 1474 50  0000 C CNN
+F 2 "" H 4050 1300 50  0001 C CNN
+F 3 "~" H 4050 1300 50  0001 C CNN
+	1    4050 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 1300 4050 1300
+Text GLabel 5400 1500 0    50   Input ~ 0
+V_POWER
+Wire Wire Line
+	5400 1500 5450 1500
+Wire Wire Line
+	5450 1500 5450 1850
+Text HLabel 5800 2350 2    50   Output ~ 0
+PHASE_1
+Wire Wire Line
+	5450 2350 5800 2350
+$Comp
+L power:GND #PWR0101
+U 1 1 5FEE82DB
+P 5450 2850
+F 0 "#PWR0101" H 5450 2600 50  0001 C CNN
+F 1 "GND" H 5455 2677 50  0000 C CNN
+F 2 "" H 5450 2850 50  0001 C CNN
+F 3 "" H 5450 2850 50  0001 C CNN
+	1    5450 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 2350 4600 2350
+Wire Wire Line
+	4150 2250 4850 2250
+Wire Wire Line
+	4850 2250 4850 2050
+Wire Wire Line
+	4150 2450 4850 2450
+Wire Wire Line
+	4850 2450 4850 2650
+Wire Wire Line
+	5450 4000 5450 4100
+Connection ~ 5450 4100
+Wire Wire Line
+	5450 4100 5450 4200
+$Comp
+L fpga_esc-rescue:IRFR3806TRPBF-lib_sch Q?
+U 1 1 5FEE82E9
+P 5400 3850
+AR Path="/5FEE82E9" Ref="Q?"  Part="1" 
+AR Path="/5FD3EFA2/5FEE82E9" Ref="Q3"  Part="1" 
+F 0 "Q3" H 5555 3946 50  0000 L CNN
+F 1 "IRFR3806TRPBF" H 5555 3855 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin4" H 6450 4400 50  0001 C CNN
+F 3 "https://www.infineon.com/dgdl/irfr3806pbf.pdf?fileId=5546d462533600a401535631e18720d9" H 5400 4500 50  0001 C CNN
+	1    5400 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L fpga_esc-rescue:IRFR3806TRPBF-lib_sch Q?
+U 1 1 5FEE82F0
+P 5400 4450
+AR Path="/5FEE82F0" Ref="Q?"  Part="1" 
+AR Path="/5FD3EFA2/5FEE82F0" Ref="Q4"  Part="1" 
+F 0 "Q4" H 5555 4546 50  0000 L CNN
+F 1 "IRFR3806TRPBF" H 5555 4455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin4" H 6450 5000 50  0001 C CNN
+F 3 "https://www.infineon.com/dgdl/irfr3806pbf.pdf?fileId=5546d462533600a401535631e18720d9" H 5400 5100 50  0001 C CNN
+	1    5400 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L fpga_esc-rescue:R100-lib_sch R3
+U 1 1 5FEE82F7
+P 5000 3850
+F 0 "R3" H 5000 4125 50  0000 C CNN
+F 1 "100R" H 5000 4034 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5000 4050 50  0001 C CNN
+F 3 "" H 5000 4050 50  0001 C CNN
+	1    5000 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L fpga_esc-rescue:R100-lib_sch R4
+U 1 1 5FEE82FE
+P 5000 4450
+F 0 "R4" H 5000 4725 50  0000 C CNN
+F 1 "100R" H 5000 4634 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5000 4650 50  0001 C CNN
+F 3 "" H 5000 4650 50  0001 C CNN
+	1    5000 4450
+	1    0    0    -1  
+$EndComp
+Text GLabel 5400 3250 0    50   Input ~ 0
+V_POWER
+Wire Wire Line
+	5400 3250 5450 3250
+Wire Wire Line
+	5450 3250 5450 3600
+Text HLabel 5800 4100 2    50   Output ~ 0
+PHASE_2
+Wire Wire Line
+	5450 4100 5800 4100
+$Comp
+L power:GND #PWR0102
+U 1 1 5FEE830A
+P 5450 4600
+F 0 "#PWR0102" H 5450 4350 50  0001 C CNN
+F 1 "GND" H 5455 4427 50  0000 C CNN
+F 2 "" H 5450 4600 50  0001 C CNN
+F 3 "" H 5450 4600 50  0001 C CNN
+	1    5450 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5FEE8310
+P 3750 4600
+F 0 "#PWR0103" H 3750 4350 50  0001 C CNN
+F 1 "GND" H 3755 4427 50  0000 C CNN
+F 2 "" H 3750 4600 50  0001 C CNN
+F 3 "" H 3750 4600 50  0001 C CNN
+	1    3750 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 4100 4600 4100
+Wire Wire Line
+	4150 4000 4850 4000
+Wire Wire Line
+	4850 4000 4850 3800
+Wire Wire Line
+	4150 4200 4850 4200
+Wire Wire Line
+	4850 4200 4850 4400
+Wire Wire Line
+	5450 6000 5450 6100
+Connection ~ 5450 6100
+Wire Wire Line
+	5450 6100 5450 6200
+$Comp
+L fpga_esc-rescue:IRFR3806TRPBF-lib_sch Q?
+U 1 1 5FEE831E
+P 5400 5850
+AR Path="/5FEE831E" Ref="Q?"  Part="1" 
+AR Path="/5FD3EFA2/5FEE831E" Ref="Q5"  Part="1" 
+F 0 "Q5" H 5555 5946 50  0000 L CNN
+F 1 "IRFR3806TRPBF" H 5555 5855 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin4" H 6450 6400 50  0001 C CNN
+F 3 "https://www.infineon.com/dgdl/irfr3806pbf.pdf?fileId=5546d462533600a401535631e18720d9" H 5400 6500 50  0001 C CNN
+	1    5400 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L fpga_esc-rescue:IRFR3806TRPBF-lib_sch Q?
+U 1 1 5FEE8325
+P 5400 6450
+AR Path="/5FEE8325" Ref="Q?"  Part="1" 
+AR Path="/5FD3EFA2/5FEE8325" Ref="Q6"  Part="1" 
+F 0 "Q6" H 5555 6546 50  0000 L CNN
+F 1 "IRFR3806TRPBF" H 5555 6455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin4" H 6450 7000 50  0001 C CNN
+F 3 "https://www.infineon.com/dgdl/irfr3806pbf.pdf?fileId=5546d462533600a401535631e18720d9" H 5400 7100 50  0001 C CNN
+	1    5400 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L fpga_esc-rescue:R100-lib_sch R5
+U 1 1 5FEE832C
+P 5000 5850
+F 0 "R5" H 5000 6125 50  0000 C CNN
+F 1 "100R" H 5000 6034 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5000 6050 50  0001 C CNN
+F 3 "" H 5000 6050 50  0001 C CNN
+	1    5000 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L fpga_esc-rescue:R100-lib_sch R6
+U 1 1 5FEE8333
+P 5000 6450
+F 0 "R6" H 5000 6725 50  0000 C CNN
+F 1 "100R" H 5000 6634 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5000 6650 50  0001 C CNN
+F 3 "" H 5000 6650 50  0001 C CNN
+	1    5000 6450
+	1    0    0    -1  
+$EndComp
+Text GLabel 5400 5250 0    50   Input ~ 0
+V_POWER
+Wire Wire Line
+	5400 5250 5450 5250
+Wire Wire Line
+	5450 5250 5450 5600
+Text HLabel 5800 6100 2    50   Output ~ 0
+PHASE_3
+Wire Wire Line
+	5450 6100 5800 6100
+$Comp
+L power:GND #PWR0104
+U 1 1 5FEE833F
+P 5450 6600
+F 0 "#PWR0104" H 5450 6350 50  0001 C CNN
+F 1 "GND" H 5455 6427 50  0000 C CNN
+F 2 "" H 5450 6600 50  0001 C CNN
+F 3 "" H 5450 6600 50  0001 C CNN
+	1    5450 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5FEE8345
+P 3750 6600
+F 0 "#PWR0105" H 3750 6350 50  0001 C CNN
+F 1 "GND" H 3755 6427 50  0000 C CNN
+F 2 "" H 3750 6600 50  0001 C CNN
+F 3 "" H 3750 6600 50  0001 C CNN
+	1    3750 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 6100 4600 6100
+Wire Wire Line
+	4150 6000 4850 6000
+Wire Wire Line
+	4850 6000 4850 5800
+Wire Wire Line
+	4150 6200 4850 6200
+Wire Wire Line
+	4850 6200 4850 6400
+$Comp
+L power:GND #PWR0106
+U 1 1 5FEE8350
+P 3350 2600
+F 0 "#PWR0106" H 3350 2350 50  0001 C CNN
+F 1 "GND" H 3355 2427 50  0000 C CNN
+F 2 "" H 3350 2600 50  0001 C CNN
+F 3 "" H 3350 2600 50  0001 C CNN
+	1    3350 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5FEE8356
+P 3350 4350
+F 0 "#PWR0107" H 3350 4100 50  0001 C CNN
+F 1 "GND" H 3355 4177 50  0000 C CNN
+F 2 "" H 3350 4350 50  0001 C CNN
+F 3 "" H 3350 4350 50  0001 C CNN
+	1    3350 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5FEE835C
+P 3350 6350
+F 0 "#PWR0108" H 3350 6100 50  0001 C CNN
+F 1 "GND" H 3355 6177 50  0000 C CNN
+F 2 "" H 3350 6350 50  0001 C CNN
+F 3 "" H 3350 6350 50  0001 C CNN
+	1    3350 6350
+	1    0    0    -1  
+$EndComp
+Text HLabel 2250 2350 0    50   Input ~ 0
+HI_1
+Text HLabel 2250 2450 0    50   Input ~ 0
+LI_1
+Text HLabel 2250 6100 0    50   Input ~ 0
+HI_3
+Text HLabel 2250 6200 0    50   Input ~ 0
+LI_3
+Text HLabel 2250 4100 0    50   Input ~ 0
+HI_2
+Text HLabel 2250 4200 0    50   Input ~ 0
+LI_2
+Wire Wire Line
+	2950 3900 3350 3900
+$Comp
+L power:+12V #PWR0109
+U 1 1 5FEE8369
+P 2950 3900
+F 0 "#PWR0109" H 2950 3750 50  0001 C CNN
+F 1 "+12V" H 2965 4073 50  0000 C CNN
+F 2 "" H 2950 3900 50  0001 C CNN
+F 3 "" H 2950 3900 50  0001 C CNN
+	1    2950 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2150 3350 2150
+$Comp
+L power:+12V #PWR0110
+U 1 1 5FEE8370
+P 3000 2150
+F 0 "#PWR0110" H 3000 2000 50  0001 C CNN
+F 1 "+12V" H 3015 2323 50  0000 C CNN
+F 2 "" H 3000 2150 50  0001 C CNN
+F 3 "" H 3000 2150 50  0001 C CNN
+	1    3000 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 5900 3000 5900
+$Comp
+L power:+12V #PWR0111
+U 1 1 5FEE8377
+P 3000 5900
+F 0 "#PWR0111" H 3000 5750 50  0001 C CNN
+F 1 "+12V" H 3015 6073 50  0000 C CNN
+F 2 "" H 3000 5900 50  0001 C CNN
+F 3 "" H 3000 5900 50  0001 C CNN
+	1    3000 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 5FEE837D
+P 3750 2850
+F 0 "#PWR0112" H 3750 2600 50  0001 C CNN
+F 1 "GND" H 3755 2677 50  0000 C CNN
+F 2 "" H 3750 2850 50  0001 C CNN
+F 3 "" H 3750 2850 50  0001 C CNN
+	1    3750 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L fpga_esc-rescue:UCC27212-lib_sch U2
+U 1 1 5FEE8383
+P 3550 4250
+F 0 "U2" H 3750 4865 50  0000 C CNN
+F 1 "UCC27212" H 3750 4774 50  0000 C CNN
+F 2 "Package_SON:Texas_S-PWSON-N10_ThermalVias" H 3550 4900 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/ucc27212.pdf" H 4450 5000 50  0001 C CNN
+	1    3550 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L fpga_esc-rescue:UCC27212-lib_sch U3
+U 1 1 5FEE838A
+P 3550 6250
+F 0 "U3" H 3750 6865 50  0000 C CNN
+F 1 "UCC27212" H 3750 6774 50  0000 C CNN
+F 2 "Package_SON:Texas_S-PWSON-N10_ThermalVias" H 3550 6900 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/ucc27212.pdf" H 4450 7000 50  0001 C CNN
+	1    3550 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L fpga_esc-rescue:UCC27212-lib_sch U1
+U 1 1 5FEE8391
+P 3550 2500
+F 0 "U1" H 3750 3115 50  0000 C CNN
+F 1 "UCC27212" H 3750 3024 50  0000 C CNN
+F 2 "Package_SON:Texas_S-PWSON-N10_ThermalVias" H 3550 3150 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/ucc27212.pdf" H 4450 3250 50  0001 C CNN
+	1    3550 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L fpga_esc-rescue:Capacitor-lib_sch C?
+U 1 1 5FEEC511
+P 4300 2150
+AR Path="/5FEEC511" Ref="C?"  Part="1" 
+AR Path="/5FD3EFA2/5FEEC511" Ref="C7"  Part="1" 
+F 0 "C7" V 4552 2150 50  0000 C CNN
+F 1 "4.7 uF" V 4461 2150 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4300 1800 50  0001 C CNN
+F 3 "" H 4300 1800 50  0001 C CNN
+	1    4300 2150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4450 2150 4600 2150
+Wire Wire Line
+	4600 2150 4600 2350
+Connection ~ 4600 2350
+Wire Wire Line
+	4600 2350 5450 2350
+$Comp
+L fpga_esc-rescue:Capacitor-lib_sch C?
+U 1 1 5FEED512
+P 4300 3900
+AR Path="/5FEED512" Ref="C?"  Part="1" 
+AR Path="/5FD3EFA2/5FEED512" Ref="C8"  Part="1" 
+F 0 "C8" V 4552 3900 50  0000 C CNN
+F 1 "4.7 uF" V 4461 3900 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4300 3550 50  0001 C CNN
+F 3 "" H 4300 3550 50  0001 C CNN
+	1    4300 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4450 3900 4600 3900
+Wire Wire Line
+	4600 3900 4600 4100
+$Comp
+L fpga_esc-rescue:Capacitor-lib_sch C?
+U 1 1 5FEEDBA1
+P 4300 5900
+AR Path="/5FEEDBA1" Ref="C?"  Part="1" 
+AR Path="/5FD3EFA2/5FEEDBA1" Ref="C9"  Part="1" 
+F 0 "C9" V 4552 5900 50  0000 C CNN
+F 1 "4.7 uF" V 4461 5900 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4300 5550 50  0001 C CNN
+F 3 "" H 4300 5550 50  0001 C CNN
+	1    4300 5900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4450 5900 4600 5900
+Wire Wire Line
+	4600 5900 4600 6100
+Connection ~ 4600 4100
+Wire Wire Line
+	4600 4100 5450 4100
+Connection ~ 4600 6100
+Wire Wire Line
+	4600 6100 5450 6100
+$Comp
+L fpga_esc-rescue:Capacitor-lib_sch C?
+U 1 1 5FEF1B60
+P 2450 2650
+AR Path="/5FEF1B60" Ref="C?"  Part="1" 
+AR Path="/5FD3EFA2/5FEF1B60" Ref="C1"  Part="1" 
+F 0 "C1" H 2565 2696 50  0000 L CNN
+F 1 "100pF" H 2565 2605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2450 2300 50  0001 C CNN
+F 3 "" H 2450 2300 50  0001 C CNN
+	1    2450 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L fpga_esc-rescue:Capacitor-lib_sch C?
+U 1 1 5FEF4EAD
+P 2900 2650
+AR Path="/5FEF4EAD" Ref="C?"  Part="1" 
+AR Path="/5FD3EFA2/5FEF4EAD" Ref="C4"  Part="1" 
+F 0 "C4" H 3015 2696 50  0000 L CNN
+F 1 "100pF" H 3015 2605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2900 2300 50  0001 C CNN
+F 3 "" H 2900 2300 50  0001 C CNN
+	1    2900 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 2350 2450 2350
+Wire Wire Line
+	2450 2500 2450 2350
+Connection ~ 2450 2350
+Wire Wire Line
+	2450 2350 3350 2350
+Wire Wire Line
+	2250 2450 2900 2450
+Wire Wire Line
+	2900 2500 2900 2450
+Connection ~ 2900 2450
+Wire Wire Line
+	2900 2450 3350 2450
+$Comp
+L power:GND #PWR0113
+U 1 1 5FEFD17A
+P 2450 2800
+F 0 "#PWR0113" H 2450 2550 50  0001 C CNN
+F 1 "GND" H 2455 2627 50  0000 C CNN
+F 2 "" H 2450 2800 50  0001 C CNN
+F 3 "" H 2450 2800 50  0001 C CNN
+	1    2450 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 5FEFDEEF
+P 2900 2800
+F 0 "#PWR0114" H 2900 2550 50  0001 C CNN
+F 1 "GND" H 2905 2627 50  0000 C CNN
+F 2 "" H 2900 2800 50  0001 C CNN
+F 3 "" H 2900 2800 50  0001 C CNN
+	1    2900 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L fpga_esc-rescue:Capacitor-lib_sch C?
+U 1 1 5FEFE3A0
+P 2450 4400
+AR Path="/5FEFE3A0" Ref="C?"  Part="1" 
+AR Path="/5FD3EFA2/5FEFE3A0" Ref="C2"  Part="1" 
+F 0 "C2" H 2565 4446 50  0000 L CNN
+F 1 "100pF" H 2565 4355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2450 4050 50  0001 C CNN
+F 3 "" H 2450 4050 50  0001 C CNN
+	1    2450 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L fpga_esc-rescue:Capacitor-lib_sch C?
+U 1 1 5FEFE3A7
+P 2900 4400
+AR Path="/5FEFE3A7" Ref="C?"  Part="1" 
+AR Path="/5FD3EFA2/5FEFE3A7" Ref="C5"  Part="1" 
+F 0 "C5" H 3015 4446 50  0000 L CNN
+F 1 "100pF" H 3015 4355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2900 4050 50  0001 C CNN
+F 3 "" H 2900 4050 50  0001 C CNN
+	1    2900 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 4100 2450 4100
+Wire Wire Line
+	2450 4250 2450 4100
+Connection ~ 2450 4100
+Wire Wire Line
+	2450 4100 3350 4100
+Wire Wire Line
+	2250 4200 2900 4200
+Wire Wire Line
+	2900 4250 2900 4200
+Connection ~ 2900 4200
+Wire Wire Line
+	2900 4200 3350 4200
+$Comp
+L power:GND #PWR0115
+U 1 1 5FEFE3B6
+P 2450 4550
+F 0 "#PWR0115" H 2450 4300 50  0001 C CNN
+F 1 "GND" H 2455 4377 50  0000 C CNN
+F 2 "" H 2450 4550 50  0001 C CNN
+F 3 "" H 2450 4550 50  0001 C CNN
+	1    2450 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 5FEFE3BC
+P 2900 4550
+F 0 "#PWR0116" H 2900 4300 50  0001 C CNN
+F 1 "GND" H 2905 4377 50  0000 C CNN
+F 2 "" H 2900 4550 50  0001 C CNN
+F 3 "" H 2900 4550 50  0001 C CNN
+	1    2900 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L fpga_esc-rescue:Capacitor-lib_sch C?
+U 1 1 5FF03E9B
+P 2450 6400
+AR Path="/5FF03E9B" Ref="C?"  Part="1" 
+AR Path="/5FD3EFA2/5FF03E9B" Ref="C3"  Part="1" 
+F 0 "C3" H 2565 6446 50  0000 L CNN
+F 1 "100pF" H 2565 6355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2450 6050 50  0001 C CNN
+F 3 "" H 2450 6050 50  0001 C CNN
+	1    2450 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L fpga_esc-rescue:Capacitor-lib_sch C?
+U 1 1 5FF03EA2
+P 2900 6400
+AR Path="/5FF03EA2" Ref="C?"  Part="1" 
+AR Path="/5FD3EFA2/5FF03EA2" Ref="C6"  Part="1" 
+F 0 "C6" H 3015 6446 50  0000 L CNN
+F 1 "100pF" H 3015 6355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2900 6050 50  0001 C CNN
+F 3 "" H 2900 6050 50  0001 C CNN
+	1    2900 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 6100 2450 6100
+Wire Wire Line
+	2450 6250 2450 6100
+Connection ~ 2450 6100
+Wire Wire Line
+	2450 6100 3350 6100
+Wire Wire Line
+	2250 6200 2900 6200
+Wire Wire Line
+	2900 6250 2900 6200
+Connection ~ 2900 6200
+Wire Wire Line
+	2900 6200 3350 6200
+$Comp
+L power:GND #PWR0117
+U 1 1 5FF03EB1
+P 2450 6550
+F 0 "#PWR0117" H 2450 6300 50  0001 C CNN
+F 1 "GND" H 2455 6377 50  0000 C CNN
+F 2 "" H 2450 6550 50  0001 C CNN
+F 3 "" H 2450 6550 50  0001 C CNN
+	1    2450 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 5FF03EB7
+P 2900 6550
+F 0 "#PWR0118" H 2900 6300 50  0001 C CNN
+F 1 "GND" H 2905 6377 50  0000 C CNN
+F 2 "" H 2900 6550 50  0001 C CNN
+F 3 "" H 2900 6550 50  0001 C CNN
+	1    2900 6550
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

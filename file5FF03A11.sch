@@ -1,0 +1,212 @@
+EESchema Schematic File Version 4
+LIBS:fpga_esc-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Screw_Terminal_01x03 J?
+U 1 1 5FF03C1B
+P 6050 2800
+F 0 "J?" H 6130 2842 50  0000 L CNN
+F 1 "Screw_Terminal_01x03" H 6130 2751 50  0000 L CNN
+F 2 "" H 6050 2800 50  0001 C CNN
+F 3 "~" H 6050 2800 50  0001 C CNN
+	1    6050 2800
+	1    0    0    -1  
+$EndComp
+Text HLabel 5300 2700 0    50   Input ~ 0
+phase_1
+Text HLabel 5300 2850 0    50   Input ~ 0
+phase_2
+Text HLabel 5300 3000 0    50   Input ~ 0
+phase_3
+Wire Wire Line
+	5300 2700 5850 2700
+Wire Wire Line
+	5300 2850 5550 2850
+Wire Wire Line
+	5550 2850 5550 2800
+Wire Wire Line
+	5550 2800 5850 2800
+Wire Wire Line
+	5300 3000 5550 3000
+Wire Wire Line
+	5550 3000 5550 2900
+Wire Wire Line
+	5550 2900 5850 2900
+Text HLabel 4700 4000 0    50   Input ~ 0
+phase_1
+Text HLabel 4700 4400 0    50   Input ~ 0
+phase_2
+Text HLabel 4700 4800 0    50   Input ~ 0
+phase_3
+Text HLabel 6500 4000 2    50   Input ~ 0
+feedback_1
+Text HLabel 6500 4400 2    50   Input ~ 0
+feedback_2
+Text HLabel 6500 4800 2    50   Input ~ 0
+feedback_3
+$Comp
+L lib_sch:R100 R?
+U 1 1 5FF083A0
+P 4850 4050
+F 0 "R?" H 4850 4325 50  0000 C CNN
+F 1 "R13.7K" H 4850 4234 50  0000 C CNN
+F 2 "" H 4850 4250 50  0001 C CNN
+F 3 "" H 4850 4250 50  0001 C CNN
+	1    4850 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L lib_sch:R100 R?
+U 1 1 5FF08411
+P 6300 4050
+F 0 "R?" H 6300 4325 50  0000 C CNN
+F 1 "R100K" H 6300 4234 50  0000 C CNN
+F 2 "" H 6300 4250 50  0001 C CNN
+F 3 "" H 6300 4250 50  0001 C CNN
+	1    6300 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L lib_sch:R100 R?
+U 1 1 5FF0845A
+P 4850 4450
+F 0 "R?" H 4850 4725 50  0000 C CNN
+F 1 "R13.7K" H 4850 4634 50  0000 C CNN
+F 2 "" H 4850 4650 50  0001 C CNN
+F 3 "" H 4850 4650 50  0001 C CNN
+	1    4850 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L lib_sch:R100 R?
+U 1 1 5FF08461
+P 6300 4450
+F 0 "R?" H 6300 4725 50  0000 C CNN
+F 1 "R100K" H 6300 4634 50  0000 C CNN
+F 2 "" H 6300 4650 50  0001 C CNN
+F 3 "" H 6300 4650 50  0001 C CNN
+	1    6300 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L lib_sch:R100 R?
+U 1 1 5FF085EA
+P 4850 4850
+F 0 "R?" H 4850 5125 50  0000 C CNN
+F 1 "R13.7K" H 4850 5034 50  0000 C CNN
+F 2 "" H 4850 5050 50  0001 C CNN
+F 3 "" H 4850 5050 50  0001 C CNN
+	1    4850 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L lib_sch:R100 R?
+U 1 1 5FF085F1
+P 6300 4850
+F 0 "R?" H 6300 5125 50  0000 C CNN
+F 1 "R100K" H 6300 5034 50  0000 C CNN
+F 2 "" H 6300 5050 50  0001 C CNN
+F 3 "" H 6300 5050 50  0001 C CNN
+	1    6300 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L lib_sch:R100 R?
+U 1 1 5FF08989
+P 5300 4200
+F 0 "R?" V 5346 4182 50  0000 R CNN
+F 1 "5.2K" V 5255 4182 50  0000 R CNN
+F 2 "" H 5300 4400 50  0001 C CNN
+F 3 "" H 5300 4400 50  0001 C CNN
+	1    5300 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L lib_sch:R100 R?
+U 1 1 5FF08990
+P 5600 4600
+F 0 "R?" V 5646 4582 50  0000 R CNN
+F 1 "5.2K" V 5555 4582 50  0000 R CNN
+F 2 "" H 5600 4800 50  0001 C CNN
+F 3 "" H 5600 4800 50  0001 C CNN
+	1    5600 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L lib_sch:R100 R?
+U 1 1 5FF08997
+P 5900 4950
+F 0 "R?" V 5946 4932 50  0000 R CNN
+F 1 "5.2K" V 5855 4932 50  0000 R CNN
+F 2 "" H 5900 5150 50  0001 C CNN
+F 3 "" H 5900 5150 50  0001 C CNN
+	1    5900 4950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5000 4800 5850 4800
+Wire Wire Line
+	5000 4400 5550 4400
+Wire Wire Line
+	5000 4000 5250 4000
+Wire Wire Line
+	5250 4050 5250 4000
+Connection ~ 5250 4000
+Wire Wire Line
+	5250 4000 6150 4000
+Wire Wire Line
+	5250 5200 5550 5200
+Wire Wire Line
+	5850 5200 5850 5100
+Wire Wire Line
+	5250 4350 5250 5200
+Wire Wire Line
+	5550 4750 5550 5200
+Connection ~ 5550 5200
+Wire Wire Line
+	5550 5200 5850 5200
+Wire Wire Line
+	5550 4450 5550 4400
+Connection ~ 5550 4400
+Wire Wire Line
+	5550 4400 6150 4400
+Connection ~ 5850 4800
+Wire Wire Line
+	5850 4800 6150 4800
+$Comp
+L power:GND #PWR?
+U 1 1 5FF0987C
+P 5550 5200
+F 0 "#PWR?" H 5550 4950 50  0001 C CNN
+F 1 "GND" H 5555 5027 50  0000 C CNN
+F 2 "" H 5550 5200 50  0001 C CNN
+F 3 "" H 5550 5200 50  0001 C CNN
+	1    5550 5200
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	4000 3650 4000 5700
+Wire Notes Line
+	4000 5700 7350 5700
+Wire Notes Line
+	7350 5700 7350 3500
+Wire Notes Line
+	7350 3500 4000 3500
+Wire Notes Line
+	4000 3500 4000 3600
+Text Notes 4450 5650 0    50   ~ 0
+ASK SOMEONE ABOUT THIS SECTION CAUSE IT DOESNT SEEM RIGHT\n
+$EndSCHEMATC

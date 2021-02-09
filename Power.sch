@@ -1,0 +1,167 @@
+EESchema Schematic File Version 4
+LIBS:fpga_esc-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Screw_Terminal_01x02 J3
+U 1 1 601A3447
+P 3250 3450
+F 0 "J3" H 3330 3442 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 3330 3351 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 3250 3450 50  0001 C CNN
+F 3 "~" H 3250 3450 50  0001 C CNN
+	1    3250 3450
+	1    0    0    -1  
+$EndComp
+Text GLabel 3250 2900 0    50   Input ~ 0
+V_POWER
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 601A37A8
+P 3400 2900
+F 0 "#FLG01" H 3400 2975 50  0001 C CNN
+F 1 "PWR_FLAG" H 3400 3074 50  0000 C CNN
+F 2 "" H 3400 2900 50  0001 C CNN
+F 3 "~" H 3400 2900 50  0001 C CNN
+	1    3400 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 2900 3400 2900
+$Comp
+L power:+12V #PWR01
+U 1 1 601A37EB
+P 2850 3450
+F 0 "#PWR01" H 2850 3300 50  0001 C CNN
+F 1 "+12V" H 2865 3623 50  0000 C CNN
+F 2 "" H 2850 3450 50  0001 C CNN
+F 3 "" H 2850 3450 50  0001 C CNN
+	1    2850 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 601A382B
+P 2850 3550
+F 0 "#PWR02" H 2850 3300 50  0001 C CNN
+F 1 "GND" H 2855 3377 50  0000 C CNN
+F 2 "" H 2850 3550 50  0001 C CNN
+F 3 "" H 2850 3550 50  0001 C CNN
+	1    2850 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 3450 3050 3450
+Wire Wire Line
+	3050 3550 2850 3550
+Text GLabel 3250 4150 0    50   Input ~ 0
+V_POWER
+$Comp
+L power:+12V #PWR03
+U 1 1 601A38F7
+P 3400 4150
+F 0 "#PWR03" H 3400 4000 50  0001 C CNN
+F 1 "+12V" H 3415 4323 50  0000 C CNN
+F 2 "" H 3400 4150 50  0001 C CNN
+F 3 "" H 3400 4150 50  0001 C CNN
+	1    3400 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 4150 3400 4150
+$Comp
+L Regulator_Linear:LD1117S33TR_SOT223 U7
+U 1 1 601E39D6
+P 7000 2700
+F 0 "U7" H 7000 2942 50  0000 C CNN
+F 1 "LD1117S33TR_SOT223" H 7000 2851 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 7000 2900 50  0001 C CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 7100 2450 50  0001 C CNN
+	1    7000 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 601E3A2E
+P 7000 3100
+F 0 "#PWR05" H 7000 2850 50  0001 C CNN
+F 1 "GND" H 7005 2927 50  0000 C CNN
+F 2 "" H 7000 3100 50  0001 C CNN
+F 3 "" H 7000 3100 50  0001 C CNN
+	1    7000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L lib_sch:Capacitor C16
+U 1 1 601E3A84
+P 6150 2850
+F 0 "C16" H 6265 2896 50  0000 L CNN
+F 1 "100nF" H 6265 2805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6150 2500 50  0001 C CNN
+F 3 "" H 6150 2500 50  0001 C CNN
+	1    6150 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L lib_sch:Capacitor C17
+U 1 1 601E3B55
+P 7950 2850
+F 0 "C17" H 8065 2896 50  0000 L CNN
+F 1 "10uF" H 8065 2805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7950 2500 50  0001 C CNN
+F 3 "" H 7950 2500 50  0001 C CNN
+	1    7950 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 3000 7000 3000
+Wire Wire Line
+	7000 3000 6150 3000
+Connection ~ 7000 3000
+Wire Wire Line
+	7000 3000 7000 3100
+Wire Wire Line
+	6150 2700 6700 2700
+Wire Wire Line
+	7300 2700 7950 2700
+$Comp
+L power:+12V #PWR04
+U 1 1 601E3D3E
+P 5700 2700
+F 0 "#PWR04" H 5700 2550 50  0001 C CNN
+F 1 "+12V" H 5715 2873 50  0000 C CNN
+F 2 "" H 5700 2700 50  0001 C CNN
+F 3 "" H 5700 2700 50  0001 C CNN
+	1    5700 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 2700 5700 2700
+Connection ~ 6150 2700
+$Comp
+L power:+3V3 #PWR06
+U 1 1 601E3E0B
+P 8350 2700
+F 0 "#PWR06" H 8350 2550 50  0001 C CNN
+F 1 "+3V3" H 8365 2873 50  0000 C CNN
+F 2 "" H 8350 2700 50  0001 C CNN
+F 3 "" H 8350 2700 50  0001 C CNN
+	1    8350 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 2700 7950 2700
+Connection ~ 7950 2700
+$EndSCHEMATC

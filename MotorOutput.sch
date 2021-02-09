@@ -1,0 +1,422 @@
+EESchema Schematic File Version 4
+LIBS:fpga_esc-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Screw_Terminal_01x03 J1
+U 1 1 5FF03C1B
+P 6800 4000
+F 0 "J1" H 6880 4042 50  0000 L CNN
+F 1 "Screw_Terminal_01x03" H 6880 3951 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3_1x03_P5.00mm_Horizontal" H 6800 4000 50  0001 C CNN
+F 3 "~" H 6800 4000 50  0001 C CNN
+	1    6800 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 4050 6300 4000
+Wire Wire Line
+	6300 4000 6600 4000
+Wire Wire Line
+	6300 4200 6300 4100
+Wire Wire Line
+	6300 4100 6600 4100
+Text HLabel 2600 2100 0    50   Input ~ 0
+feedback_1
+Text HLabel 2600 4100 0    50   Input ~ 0
+feedback_2
+Text HLabel 3900 2300 2    50   Input ~ 0
+phase_1
+Text HLabel 3900 4300 2    50   Input ~ 0
+phase_2
+Text HLabel 3900 6400 2    50   Input ~ 0
+phase_3
+$Comp
+L Sensor_Current:ACS711xLCTR-12AB U4
+U 1 1 60125E7B
+P 3500 2100
+F 0 "U4" H 3750 1750 50  0000 C CNN
+F 1 "ACS711xLCTR-12AB" H 2700 1750 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3850 2050 50  0001 L CIN
+F 3 "http://www.allegromicro.com/~/Media/Files/Datasheets/ACS711-Datasheet.ashx" H 3500 2100 50  0001 C CNN
+	1    3500 2100
+	-1   0    0    1   
+$EndComp
+Text Label 3900 1900 0    50   ~ 0
+output_1
+$Comp
+L Sensor_Current:ACS711xLCTR-12AB U5
+U 1 1 601367A7
+P 3500 4100
+F 0 "U5" H 3750 3750 50  0000 C CNN
+F 1 "ACS711xLCTR-12AB" H 3050 3750 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3850 4050 50  0001 L CIN
+F 3 "http://www.allegromicro.com/~/Media/Files/Datasheets/ACS711-Datasheet.ashx" H 3500 4100 50  0001 C CNN
+	1    3500 4100
+	-1   0    0    1   
+$EndComp
+Text Label 3900 3900 0    50   ~ 0
+output_2
+$Comp
+L Sensor_Current:ACS711xLCTR-12AB U6
+U 1 1 60136811
+P 3500 6200
+F 0 "U6" H 3750 5850 50  0000 C CNN
+F 1 "ACS711xLCTR-12AB" H 3050 5850 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3850 6150 50  0001 L CIN
+F 3 "http://www.allegromicro.com/~/Media/Files/Datasheets/ACS711-Datasheet.ashx" H 3500 6200 50  0001 C CNN
+	1    3500 6200
+	-1   0    0    1   
+$EndComp
+Text Label 3900 6000 0    50   ~ 0
+output_3
+$Comp
+L power:GND #PWR0119
+U 1 1 601370D7
+P 3500 2500
+F 0 "#PWR0119" H 3500 2250 50  0001 C CNN
+F 1 "GND" H 3505 2327 50  0000 C CNN
+F 2 "" H 3500 2500 50  0001 C CNN
+F 3 "" H 3500 2500 50  0001 C CNN
+	1    3500 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 6013762C
+P 3500 4500
+F 0 "#PWR0120" H 3500 4250 50  0001 C CNN
+F 1 "GND" H 3505 4327 50  0000 C CNN
+F 2 "" H 3500 4500 50  0001 C CNN
+F 3 "" H 3500 4500 50  0001 C CNN
+	1    3500 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0121
+U 1 1 6013765C
+P 3500 6600
+F 0 "#PWR0121" H 3500 6350 50  0001 C CNN
+F 1 "GND" H 3505 6427 50  0000 C CNN
+F 2 "" H 3500 6600 50  0001 C CNN
+F 3 "" H 3500 6600 50  0001 C CNN
+	1    3500 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0122
+U 1 1 6014BADE
+P 3500 1600
+F 0 "#PWR0122" H 3500 1450 50  0001 C CNN
+F 1 "+3V3" H 3515 1773 50  0000 C CNN
+F 2 "" H 3500 1600 50  0001 C CNN
+F 3 "" H 3500 1600 50  0001 C CNN
+	1    3500 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0123
+U 1 1 6014BB01
+P 3500 3600
+F 0 "#PWR0123" H 3500 3450 50  0001 C CNN
+F 1 "+3V3" H 3515 3773 50  0000 C CNN
+F 2 "" H 3500 3600 50  0001 C CNN
+F 3 "" H 3500 3600 50  0001 C CNN
+	1    3500 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0124
+U 1 1 6014BB31
+P 3500 5700
+F 0 "#PWR0124" H 3500 5550 50  0001 C CNN
+F 1 "+3V3" H 3515 5873 50  0000 C CNN
+F 2 "" H 3500 5700 50  0001 C CNN
+F 3 "" H 3500 5700 50  0001 C CNN
+	1    3500 5700
+	1    0    0    -1  
+$EndComp
+Text HLabel 2550 6200 0    50   Input ~ 0
+feedback_3
+$Comp
+L lib_sch:Capacitor C13
+U 1 1 601507D4
+P 5600 2050
+F 0 "C13" H 5715 2096 50  0000 L CNN
+F 1 "0.1uF" H 5715 2005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5600 1700 50  0001 C CNN
+F 3 "" H 5600 1700 50  0001 C CNN
+	1    5600 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L lib_sch:Capacitor C14
+U 1 1 601508A2
+P 6200 2050
+F 0 "C14" H 6315 2096 50  0000 L CNN
+F 1 "0.1uF" H 6315 2005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6200 1700 50  0001 C CNN
+F 3 "" H 6200 1700 50  0001 C CNN
+	1    6200 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L lib_sch:Capacitor C15
+U 1 1 6015094F
+P 6800 2050
+F 0 "C15" H 6915 2096 50  0000 L CNN
+F 1 "0.1uF" H 6915 2005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6800 1700 50  0001 C CNN
+F 3 "" H 6800 1700 50  0001 C CNN
+	1    6800 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 1900 5600 1750
+Wire Wire Line
+	5600 1750 6200 1750
+Wire Wire Line
+	6800 1750 6800 1900
+Wire Wire Line
+	6200 1900 6200 1750
+Connection ~ 6200 1750
+Wire Wire Line
+	6200 1750 6800 1750
+Wire Wire Line
+	5600 2200 5600 2350
+Wire Wire Line
+	5600 2350 6200 2350
+Wire Wire Line
+	6800 2350 6800 2200
+Wire Wire Line
+	6200 2200 6200 2350
+Connection ~ 6200 2350
+Wire Wire Line
+	6200 2350 6800 2350
+$Comp
+L power:GND #PWR0125
+U 1 1 60150EF5
+P 6200 2450
+F 0 "#PWR0125" H 6200 2200 50  0001 C CNN
+F 1 "GND" H 6205 2277 50  0000 C CNN
+F 2 "" H 6200 2450 50  0001 C CNN
+F 3 "" H 6200 2450 50  0001 C CNN
+	1    6200 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 2450 6200 2350
+$Comp
+L power:+3V3 #PWR0126
+U 1 1 6015147C
+P 6200 1750
+F 0 "#PWR0126" H 6200 1600 50  0001 C CNN
+F 1 "+3V3" H 6215 1923 50  0000 C CNN
+F 2 "" H 6200 1750 50  0001 C CNN
+F 3 "" H 6200 1750 50  0001 C CNN
+	1    6200 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L lib_sch:Capacitor C11
+U 1 1 60152A76
+P 2900 2250
+F 0 "C11" H 3015 2296 50  0000 L CNN
+F 1 "1nF" H 3015 2205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2900 1900 50  0001 C CNN
+F 3 "" H 2900 1900 50  0001 C CNN
+	1    2900 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0127
+U 1 1 60152A7E
+P 2900 2400
+F 0 "#PWR0127" H 2900 2150 50  0001 C CNN
+F 1 "GND" H 2905 2227 50  0000 C CNN
+F 2 "" H 2900 2400 50  0001 C CNN
+F 3 "" H 2900 2400 50  0001 C CNN
+	1    2900 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2100 2900 2100
+Connection ~ 2900 2100
+$Comp
+L lib_sch:Capacitor C12
+U 1 1 60152C60
+P 2900 4250
+F 0 "C12" H 3015 4296 50  0000 L CNN
+F 1 "1nF" H 3015 4205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2900 3900 50  0001 C CNN
+F 3 "" H 2900 3900 50  0001 C CNN
+	1    2900 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0128
+U 1 1 60152C68
+P 2900 4400
+F 0 "#PWR0128" H 2900 4150 50  0001 C CNN
+F 1 "GND" H 2905 4227 50  0000 C CNN
+F 2 "" H 2900 4400 50  0001 C CNN
+F 3 "" H 2900 4400 50  0001 C CNN
+	1    2900 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 4100 2900 4100
+Connection ~ 2900 4100
+$Comp
+L lib_sch:Capacitor C10
+U 1 1 60152EE1
+P 2850 6350
+F 0 "C10" H 2965 6396 50  0000 L CNN
+F 1 "1nF" H 2965 6305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2850 6000 50  0001 C CNN
+F 3 "" H 2850 6000 50  0001 C CNN
+	1    2850 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0129
+U 1 1 60152EE9
+P 2850 6500
+F 0 "#PWR0129" H 2850 6250 50  0001 C CNN
+F 1 "GND" H 2855 6327 50  0000 C CNN
+F 2 "" H 2850 6500 50  0001 C CNN
+F 3 "" H 2850 6500 50  0001 C CNN
+	1    2850 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 6200 2850 6200
+Connection ~ 2850 6200
+Wire Wire Line
+	2900 2100 3100 2100
+Wire Wire Line
+	2900 4100 3100 4100
+Wire Wire Line
+	2850 6200 3100 6200
+$Comp
+L power:+3.3V #PWR0130
+U 1 1 60154F16
+P 2700 5700
+F 0 "#PWR0130" H 2700 5550 50  0001 C CNN
+F 1 "+3.3V" H 2715 5873 50  0000 C CNN
+F 2 "" H 2700 5700 50  0001 C CNN
+F 3 "" H 2700 5700 50  0001 C CNN
+	1    2700 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L lib_sch:R100 R7
+U 1 1 60155EB4
+P 2650 5850
+F 0 "R7" V 2604 5988 50  0000 L CNN
+F 1 "R100" V 2695 5988 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2650 6050 50  0001 C CNN
+F 3 "" H 2650 6050 50  0001 C CNN
+	1    2650 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0131
+U 1 1 60157D73
+P 2750 3600
+F 0 "#PWR0131" H 2750 3450 50  0001 C CNN
+F 1 "+3.3V" H 2765 3773 50  0000 C CNN
+F 2 "" H 2750 3600 50  0001 C CNN
+F 3 "" H 2750 3600 50  0001 C CNN
+	1    2750 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L lib_sch:R100 R9
+U 1 1 60157D79
+P 2700 3750
+F 0 "R9" V 2654 3888 50  0000 L CNN
+F 1 "R100" V 2745 3888 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2700 3950 50  0001 C CNN
+F 3 "" H 2700 3950 50  0001 C CNN
+	1    2700 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0132
+U 1 1 601589C1
+P 2750 1600
+F 0 "#PWR0132" H 2750 1450 50  0001 C CNN
+F 1 "+3.3V" H 2765 1773 50  0000 C CNN
+F 2 "" H 2750 1600 50  0001 C CNN
+F 3 "" H 2750 1600 50  0001 C CNN
+	1    2750 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L lib_sch:R100 R8
+U 1 1 601589C7
+P 2700 1750
+F 0 "R8" V 2654 1888 50  0000 L CNN
+F 1 "R100" V 2745 1888 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2700 1950 50  0001 C CNN
+F 3 "" H 2700 1950 50  0001 C CNN
+	1    2700 1750
+	0    1    1    0   
+$EndComp
+Text HLabel 2600 2000 0    50   Input ~ 0
+fault_1
+Text HLabel 2600 4000 0    50   Input ~ 0
+fault_2
+Text HLabel 2550 6100 0    50   Input ~ 0
+fault_3
+Wire Wire Line
+	2600 2000 2750 2000
+Wire Wire Line
+	2750 1900 2750 2000
+Connection ~ 2750 2000
+Wire Wire Line
+	2750 2000 3100 2000
+Wire Wire Line
+	2600 4000 2750 4000
+Wire Wire Line
+	2750 3900 2750 4000
+Connection ~ 2750 4000
+Wire Wire Line
+	2750 4000 3100 4000
+Wire Wire Line
+	3500 3600 3500 3700
+Wire Wire Line
+	2550 6100 2700 6100
+Wire Wire Line
+	2700 6100 2700 6000
+Connection ~ 2700 6100
+Wire Wire Line
+	2700 6100 3100 6100
+Wire Wire Line
+	3500 5800 3500 5700
+Text Label 5550 3900 0    50   ~ 0
+output_1
+Text Label 5550 4050 0    50   ~ 0
+output_2
+Text Label 5550 4200 0    50   ~ 0
+output_3
+Wire Wire Line
+	5550 3900 6600 3900
+Wire Wire Line
+	5550 4050 6300 4050
+Wire Wire Line
+	5550 4200 6300 4200
+$EndSCHEMATC
